@@ -41,7 +41,82 @@
 </head>
 <body class="host_version"> 
 
-	
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
 
     <!-- LOADER -->
 	<div id="preloader">
@@ -68,8 +143,8 @@
 				<div class="collapse navbar-collapse" id="navbars-host">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item "><a class="nav-link" href="home.html">Home</a></li>
-						
-						<li class="nav-item dropdown">
+						<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+						<li class="nav-item active dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Service </a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
 								<a class="dropdown-item" href="secondary.html">Secondary and Higher Secondary</a>
@@ -79,12 +154,10 @@
 						<li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
 						<li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
 						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-						<!--
 						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-						-->
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-                        <li><a class="hover-btn-new log orange" target="_blank" href="https://www.surveymonkey.com/r/86CSQ9N"><span>Book Now</span></a></li>
+                        <li><a class="hover-btn-new log orange" href="https://www.surveymonkey.com/r/86CSQ9N"><span>Book Now</span></a></li>
                     </ul>
 				</div>
 			</div>
@@ -94,22 +167,10 @@
 	
 	<div class="all-title-box">
 		<div class="container text-center">
-			<h1>Secondary and Higher Secondary Education<span class="m_1">Shape your future with us</span></h1>
+			<h1>Secondary and Higher Secondary Education<span class="m_1">shape your future with us</span></h1>
 		</div>
 	</div>
 	
-    <html>
-
-    <style>
-      marquee{
-      font-size: 20px;
-      font-weight: 800;
-      color:    #0000FF;
-      font-family: sserif;
-      }
-    </style>
-    <marquee behavior="slide" direction="left"e>If you are using Android or iOS device kindly open your browser in desktop mode to go through the course fluently</marquee>
-
     <div id="overviews" class="section wb">
         <div class="container">
             <div class="section-title row text-center">
@@ -124,7 +185,7 @@
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_1.jpg" alt="" class="img-fluid2">
+							<img src="images/s1.jpg" alt="" class="img-fluid">
 						</div>
 						<div class="course-br">
 							<div class="course-title">
@@ -145,7 +206,7 @@
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_2.jpg" alt="" class="img-fluid2">
+							<img src="images/s2.jpg" alt="" class="img-fluid">
 						</div>
 						<div class="course-br">
 							<div class="course-title">
@@ -170,7 +231,7 @@
 				<div class="col-lg-6 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_3.jpg" alt="" class="img-fluid2">
+							<img src="images/s3.jpg" alt="" class="img-fluid">
 						</div>
 						<div class="course-br">
 							<div class="course-title">
@@ -185,7 +246,7 @@
 				<div class="col-lg-6 col-md-6 col-12">
                    <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_4.jpg" alt="" class="img-fluid2">
+							<img src="images/s4.jpg" alt="" class="img-fluid">
 						</div>
 						<div class="course-br">
 							<div class="course-title">
@@ -203,7 +264,7 @@
 				<div class="col-lg-6 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_3.jpg" alt="" class="img-fluid2">
+							<img src="images/s5.jpg" alt="" class="img-fluid">
 						</div>
 						<div class="course-br">
 							<div class="course-title">
@@ -212,8 +273,8 @@
 							<div class="course-desc">
 								
 							<div>
-								<ul><i class="fa fa-book" aria-hidden="true"></i><a href="class11.html" class="tab">Class 11 Full Course</a></ul>	
-								<ul><i class="fa fa-book" aria-hidden="true"></i><a href="class12.html" class="tab">Class 12 Full Course</a></ul>	
+								<ul><i class="fa fa-book" aria-hidden="true"></i><a href="class11.html" class="tab"> class 11 full course</a></ul>	
+								<ul><i class="fa fa-book" aria-hidden="true"></i><a href="class12.html" class="tab">class 12 full course </a></ul>	
 								<ul><i class="fa fa-book" aria-hidden="true"></i><a href="#" class="tab">Entrance Examinations</a></ul>						
 							</div>
 					</div>
@@ -221,9 +282,6 @@
             </div>
         </div><!-- end container -->
     </div><!-- end section -->
-</div>
-</div>
-
 
     <div class="parallax section dbcolor">
         <div class="container">
@@ -250,9 +308,7 @@
         </div><!-- end container -->
     </div><!-- end section -->
 
-    
-
-    <footer class="footer mycolor" id="about">
+<footer class="footer mycolor" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-xs-12">
@@ -261,32 +317,32 @@
                             <h3>About US</h3>
                         </div>
                         <p>An Initiative for providing smart learning experience with career assistance to school and undergrad students to achieve a glorious future</p>   
-                        <div class="footer-right">
-                            <ul class="footer-links-soi">
-                                <li><a href="https://www.facebook.com/Edviser-107627234336436/?modal=admin_todo_tour"><i class="fa fa-facebook"></i></a></li>
-                                
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            </ul><!-- end links -->
-                        </div>                      
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="https://www.facebook.com/Edviser-107627234336436/?modal=admin_todo_tour"><i class="fa fa-facebook"></i></a></li>
+								
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								
+			                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							</ul><!-- end links -->
+						</div>						
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
 
-                <div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="col-lg-4 col-md-4 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title">
                             <h3>Information Link</h3>
                         </div>
                         <ul class="footer-links">
                             <li><a href="home.html">Home</a></li>
-                            <!--<li><a href="blog.html">Blog</a></li>-->
+                            <li><a href="blog.html">Blog</a></li>
                             <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="about.html">About</a></li>
+							<li><a href="about.html">About</a></li>
                         </ul><!-- end links -->
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
-                
+				
                 <div class="col-lg-4 col-md-4 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title">
@@ -301,7 +357,7 @@
                         </ul><!-- end links -->
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
-                
+				
             </div><!-- end row -->
         </div><!-- end container -->
     </footer><!-- end footer -->
